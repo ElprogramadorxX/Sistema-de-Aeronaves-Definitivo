@@ -31,7 +31,7 @@ public class App {
         
 
         int escolha = bot.nextInt();
-        bot.nextLine();  // Consome a nova linha
+        bot.nextLine();
 
         switch (escolha) {
             case 1:
@@ -54,7 +54,7 @@ public class App {
                 int capacidadeAviao = bot.nextInt();
                 System.out.print("Velocidade: ");
                 int velocidadeAviao = bot.nextInt();
-                bot.nextLine();  // Consome a nova linha
+                bot.nextLine(); 
                 Aviao novoAviao = new Aviao(nomeAviao, capacidadeAviao, velocidadeAviao);
                 lista.add(novoAviao);
                 System.out.println("Avião adicionado");
@@ -67,7 +67,7 @@ public class App {
                 int capacidadeHelicoptero = bot.nextInt();
                 System.out.print("Tem Resgate aereo?: ");
                 boolean resgate = bot.nextBoolean();
-                bot.nextLine();  // Consome a nova linha
+                bot.nextLine();
                 Helicoptero novoHelicoptero = new Helicoptero(nomeHelicoptero, capacidadeHelicoptero, resgate);
                 lista.add(novoHelicoptero);
                 System.out.println("Helicóptero adicionado com sucesso!");
